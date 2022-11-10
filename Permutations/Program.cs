@@ -27,6 +27,7 @@ namespace Permutations
       }
       else
       {
+        // we need to check for all the array elements every time
         for (int i = 0; i < nums.Length; i++)
         {
           if (temp.Contains(nums[i])) continue; // All the game change happened in this line only
