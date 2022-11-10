@@ -34,7 +34,7 @@ namespace Permutations
           temp.Add(nums[i]);
           Backtracking(nums, result, temp);
           var list = temp.ToList();
-          temp.Remove(list.ElementAt(temp.Count - 1));
+          temp.Remove(list[temp.Count - 1]);
         }
       }
     }
